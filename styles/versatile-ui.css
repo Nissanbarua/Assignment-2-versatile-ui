@@ -1,12 +1,141 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 /* shared styles */
 
-body{
-/* background-color: #000000; */
-margin: 0;
-padding: 0;
-font-family: "Inter", sans-serif;
+body {
+   
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  color: rgb(255, 255, 255);
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+/* header related styles */
+.nav-option {
+  display: flex;
+  justify-content: space-between;
+  /* background: linear-gradient(
+    180deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%
+  ); */
+}
+.nav-title {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: rgb(230, 83, 60);
+}
+.navbar2{
+    display: none;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+nav ul li {
+  list-style: none;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
+}
+.navbar1{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  padding: 0.5em 1rem;
+  border-radius: 2.5rem;
+}
+nav ul li a.active,
+nav ul li a:hover {
+  background-color: rgb(230, 83, 60);
+  color: rgb(255, 255, 255);
+}
+.hero-container {
+  display: flex;
+  justify-content: center;
+  /* background: linear-gradient(
+    180deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%
+  ); */
+}
+.hero-content {
+  width: 50%;
+  height: 100%;
+  align-items: center;
+}
+.hero-title {
+  font-size: 3.8rem;
+  font-weight: 900;
+  margin-top: 3rem;
+  margin-bottom: 1.8rem;
+}
+.hero-subtitle {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 2rem;
+}
+.btn-primary {
+  border-radius: 2rem;
+  background: rgb(230, 83, 60);
+  border: none;
+  padding: 0.7rem 1.5rem;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.btn-secondary {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 0.7rem 1.5rem;
+  border-radius: 2rem;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.features {
+  width: 50%;
+  text-align: right;
+  height: 100%;
+}
+
+
+
+
+
+/* responsive for mobile devices */
+@media screen and (max-width:576px) {
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .navbar1{
+        display: none;
+    }
+    .navbar2{
+        display: block;
+        font-size: 2rem;
+    }
+    .nav-title{
+        font-size: 3rem;
+    }
+    .hero-container{
+        flex-direction: column;
+        
+    }
+    .hero-content{
+        width: 100%;
+    }
+    .hero-title{
+        font-size: 3rem;
+    }
+    .features{
+        width: 100%;
+    }
 }
