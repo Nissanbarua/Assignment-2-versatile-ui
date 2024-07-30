@@ -133,11 +133,14 @@ font-size: 1rem;
 }
 .run-img {
   width: 40%;
+  
 }
 .run-img img{
     width: 100%;
     border-radius: 1rem;
     text-align: right;
+    object-fit: none;
+  object-position: 66% 28%;
 }
 /* responsive for mobile devices */
 @media screen and (max-width: 576px) {
@@ -155,7 +158,7 @@ font-size: 1rem;
   .nav-title {
     font-size: 3rem;
   }
-  .hero-container {
+  .hero-container, .run-container {
     flex-direction: column;
   }
   .hero-content {
@@ -167,4 +170,14 @@ font-size: 1rem;
   .features {
     width: 100%;
   }
+  .run-content{
+    width: 90%;
+    text-align: center;
+  }
+.run-img{
+ width: 90%;
+align-items: center;
+margin: 0 auto;
+}
+
 }
