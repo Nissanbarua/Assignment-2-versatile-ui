@@ -3,7 +3,6 @@
 /* shared styles */
 
 body {
-   
   background-color: #000000;
   margin: 0;
   padding: 0;
@@ -29,10 +28,10 @@ body {
   font-weight: 800;
   color: rgb(230, 83, 60);
 }
-.navbar2{
-    display: none;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+.navbar2 {
+  display: none;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 nav ul li {
   list-style: none;
@@ -43,7 +42,7 @@ nav ul {
   align-items: center;
   gap: 3rem;
 }
-.navbar1{
+.navbar1 {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 1rem;
@@ -105,37 +104,67 @@ nav ul li a:hover {
   height: 100%;
 }
 
-
-
-
-
+/* run related styles */
+.run-container {
+  display: flex;
+  border-radius: 18px;
+background: rgb(34, 34, 34);
+margin-top: 5.5rem;
+margin-bottom: 5.5rem;
+}
+.run-content,.run-img{
+  margin: 2rem;
+}
+.run-content{
+    width: 60%;
+    justify-content: center; 
+    align-items: center;
+    text-align: left;
+}
+.run-title{
+  color: rgb(255, 255, 255);
+font-size: 3rem;
+font-weight: 900;
+margin: 0;
+}
+.run-subtitle{
+  color: rgba(255, 255, 255, 0.5);
+font-size: 1rem;
+}
+.run-img {
+  width: 40%;
+}
+.run-img img{
+    width: 100%;
+    border-radius: 1rem;
+    text-align: right;
+}
 /* responsive for mobile devices */
-@media screen and (max-width:576px) {
-    .container{
-        width: 90%;
-        margin: 0 auto;
-    }
-    .navbar1{
-        display: none;
-    }
-    .navbar2{
-        display: block;
-        font-size: 2rem;
-    }
-    .nav-title{
-        font-size: 3rem;
-    }
-    .hero-container{
-        flex-direction: column;
-        
-    }
-    .hero-content{
-        width: 100%;
-    }
-    .hero-title{
-        font-size: 3rem;
-    }
-    .features{
-        width: 100%;
-    }
+@media screen and (max-width: 576px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .navbar1 {
+    display: none;
+  }
+  .navbar2 {
+    display: block;
+    font-size: 2rem;
+  }
+  .nav-title {
+    font-size: 3rem;
+  }
+  .hero-container {
+    flex-direction: column;
+  }
+  .hero-content {
+    width: 100%;
+  }
+  .hero-title {
+    font-size: 3rem;
+  }
+  .features {
+    width: 100%;
+  }
 }
