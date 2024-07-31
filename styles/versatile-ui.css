@@ -104,86 +104,132 @@ nav ul li a:hover {
   height: 100%;
 }
 
-
 /* habit related styles */
-.habit-container{
+.habit-container {
   text-align: center;
 }
-.habit-container h2{
+.habit-container h2 {
   font-weight: 900;
   font-size: 3rem;
   color: rgb(255, 255, 255);
   margin-bottom: 1rem;
 }
-.habit-container p{
+.habit-container p {
   color: rgba(255, 255, 255, 0.5);
   font-size: 0.8rem;
 }
 
-.habit-content{
+.habit-content {
   display: flex;
   justify-content: center;
   margin-top: 3rem;
 }
-.habit{
+.habit {
   text-align: center;
   width: 23%;
 }
-.habit img{
+.habit img {
   border-radius: 50%;
 }
-.habit h3{
+.habit h3 {
   color: rgb(255, 255, 255);
   font-weight: 600;
   font-size: 1rem;
 }
-.habit p{
+.habit p {
   color: rgba(255, 255, 255, 0.5);
-  font-size: .8rem;
+  font-size: 0.8rem;
   text-align: center;
 }
-
-
-
 
 /* run related styles */
 .run-container {
   display: flex;
   border-radius: 18px;
-background: rgb(34, 34, 34);
-margin-top: 5.5rem;
-margin-bottom: 5.5rem;
+  background: rgb(34, 34, 34);
+  margin-top: 5.5rem;
+  margin-bottom: 5.5rem;
 }
-.run-content,.run-img{
+.run-content,
+.run-img {
   margin: 2rem;
 }
-.run-content{
-    width: 60%;
-    justify-content: center; 
-    align-items: center;
-    text-align: left;
+.run-content {
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
 }
-.run-title{
+.run-title {
   color: rgb(255, 255, 255);
-font-size: 3rem;
-font-weight: 900;
-margin: 0;
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 0;
 }
-.run-subtitle{
+.run-subtitle {
   color: rgba(255, 255, 255, 0.5);
-font-size: 1rem;
+  font-size: 1rem;
 }
 .run-img {
   width: 40%;
-  
 }
-.run-img img{
-    width: 100%;
-    border-radius: 1rem;
-    text-align: right;
-    object-fit: none;
+.run-img img {
+  width: 100%;
+  border-radius: 1rem;
+  text-align: right;
+  object-fit: none;
   object-position: 66% 28%;
 }
+
+/* grid related styles */
+.training-container {
+  text-align: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-item {
+  position: relative;
+  display: inline-block;
+}
+.grid-item img {
+  display: block;
+  width: 100%;
+  height: 80%;
+}
+.overlay {
+  position: absolute;
+  text-align: center;
+  top: 20%;
+  left: 40%;
+  transform: translate(-80%, -10%);
+}
+
+/* bmi calculator related styles */
+.bmi-calculator {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.bmi-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* Our team related style */
+.team-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.team-griditem img{
+width: 95%;
+height: 60%;
+gap: 5%;
+}
+
+
 /* responsive for mobile devices */
 @media screen and (max-width: 576px) {
   .container {
@@ -200,7 +246,9 @@ font-size: 1rem;
   .nav-title {
     font-size: 3rem;
   }
-  .hero-container, .run-container, .habit-content {
+  .hero-container,
+  .run-container,
+  .habit-content {
     flex-direction: column;
   }
   .hero-content {
@@ -212,18 +260,17 @@ font-size: 1rem;
   .features {
     width: 100%;
   }
-  .run-content{
+  .run-content {
     width: 90%;
     text-align: center;
   }
-.run-img{
- width: 90%;
-align-items: center;
-margin: 0 auto;
-}
-.habit{
-  width: 100%;
-  margin-bottom: 3rem;
-}
-
+  .run-img {
+    width: 90%;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .habit {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
 }
