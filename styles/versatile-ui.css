@@ -13,7 +13,7 @@ body {
   width: 80%;
   margin: 0 auto;
 }
-.hide{
+.hide {
   display: none;
 }
 /* header related styles */
@@ -213,119 +213,143 @@ nav ul li a:hover {
 .bmi-calculator {
   color: rgb(255, 255, 255);
 }
-.bmi-calculator-heading{
+.bmi-calculator-heading {
   text-align: center;
 }
-.bmi-calculator-heading h2{
+.bmi-calculator-heading h2 {
   font-size: 2rem;
   font-weight: 900;
   color: rgb(255, 255, 255);
   margin-bottom: 0.5rem;
 }
-.bmi-calculator-heading p{
+.bmi-calculator-heading p {
   color: rgba(255, 255, 255, 0.5);
   font-size: 0.8rem;
 }
-.bmi-content{
+.bmi-content {
   background: rgb(34, 34, 34);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.bmi-chart{
-  width: 45%;
+.bmi-chart {
+  width: 40%;
   margin-left: 5%;
+  margin-right: 5%;
 }
 table {
-  /* width: 100%; */
+  width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
+  text-align: center;
 }
- th, td{
+th,
+td {
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 10px;
 }
-.bmi-chart h3, .bmi-form h3 {
+td{
+  color: rgba(255, 255, 255, 0.5);
+}
+.bmi-chart h3,
+.bmi-form h3 {
   font-size: 1.5em;
   margin-bottom: 20px;
+  text-align: center;
 }
-.bmi-form{
+.bmi-form p{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+  text-align: center;
+}
+.bmi-form {
   width: 45%;
   margin-right: 5%;
 }
-form{
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.6);
+}
+form {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+}
+#activity {
+  grid-column: span 2;
 }
 /* Our team related style */
-.team-grid{
+.team-grid {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
-.team-griditem img{
-width: 95%;
-height: 60%;
-gap: 5%;
+.team-griditem img {
+  width: 95%;
+  height: 60%;
+  gap: 5%;
 }
 
 /* footer related styles */
-.footer{
+.footer {
   width: 100%;
   margin: 0 auto;
-  background:rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
 }
-.footer-content{
+.footer-content {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.footer-content-one{
+.footer-content-one {
   width: 50%;
   text-align: left;
   margin: 5%;
   margin-left: 10%;
 }
-.footer-title{
+.footer-title {
   color: rgb(230, 83, 60);
   font-weight: 800;
   font-size: 3rem;
   margin-bottom: 0.5rem;
 }
-.footer-description{
+.footer-description {
   color: rgba(255, 255, 255, 0.5);
   font-size: 0.8rem;
 }
-.footer-content-two{
+.footer-content-two {
   width: 50%;
   display: flex;
   justify-content: space-around;
   margin-right: 5%;
 }
-.column h3{
+.column h3 {
   color: rgb(255, 255, 255);
   font-size: 1.5rem;
 }
-.column ul li  {
- list-style: none;
- margin: 1rem 0 1rem -2.5rem;
-
+.column ul li {
+  list-style: none;
+  margin: 1rem 0 1rem -2.5rem;
 }
 .column ul li a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
   font-size: 1rem;
- 
 }
-hr{
+hr {
   width: 80%;
   border: solid rgba(255, 255, 255, 0.1);
 }
-.copyright{
+.copyright {
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
   padding-bottom: 1rem;
 }
-
 
 /* responsive for mobile devices */
 @media screen and (max-width: 576px) {
