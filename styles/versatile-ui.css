@@ -212,15 +212,51 @@ nav ul li a:hover {
 /* bmi calculator related styles */
 .bmi-calculator {
   color: rgb(255, 255, 255);
+}
+.bmi-calculator-heading{
   text-align: center;
 }
-
-.bmi-content {
+.bmi-calculator-heading h2{
+  font-size: 2rem;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0.5rem;
+}
+.bmi-calculator-heading p{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+}
+.bmi-content{
+  background: rgb(34, 34, 34);
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
+  align-items: center;
 }
-
+.bmi-chart{
+  width: 45%;
+  margin-left: 5%;
+}
+table {
+  /* width: 100%; */
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+ th, td{
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px;
+}
+.bmi-chart h3, .bmi-form h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+.bmi-form{
+  width: 45%;
+  margin-right: 5%;
+}
+form{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
 /* Our team related style */
 .team-grid{
   display: grid;
