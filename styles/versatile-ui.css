@@ -506,7 +506,7 @@ hr {
   }
   .hero-container,
   .run-container,
-  .habit-content, .footer-content, .footer-content-two {
+  .habit-content, .footer-content, .footer-content-two, .bmi-content {
     flex-direction: column;
   }
   .hero-content {
@@ -553,5 +553,12 @@ hr {
   }
   .trainer4, .trainer1{
     display: none;
+  }
+  .bmi-chart{
+    width: 80%;
+  }
+  .bmi-form{
+    width: 95%;
+    margin: 0;
   }
 }
