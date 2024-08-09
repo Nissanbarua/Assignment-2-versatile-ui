@@ -109,9 +109,35 @@ nav ul li a:hover {
 }
 
 .features {
+  position: relative;
   width: 50%;
   text-align: right;
   height: 100%;
+}
+.feature{
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 12px;
+backdrop-filter: blur(20px);
+background: rgba(255, 255, 255, 0.1);
+padding: 10px;
+text-align: left;
+font-size: 0.8rem;
+}
+.feature-title1{
+  font-size: 2rem;
+  font-weight: 900;
+}
+.feature-title2{
+font-size: 2rem;
+}
+.feature1{
+  top: 20%;
+  right: -10%;
+}
+.feature2{
+  bottom: 20%;
+  left: 20%;
 }
 
 /* habit related styles */
@@ -574,5 +600,12 @@ hr {
   .item6 {
     display: none;
   }
-
+.feature1{
+  top: 10%;
+  right: 5%;
+}
+.feature2{
+  bottom: 35%;
+  left: 5%;
+}
 }
