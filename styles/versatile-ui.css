@@ -114,28 +114,29 @@ nav ul li a:hover {
   text-align: right;
   height: 100%;
 }
-.feature{
+.feature {
   position: absolute;
   border: 1px solid rgba(255, 255, 255, 0.1);
-border-radius: 12px;
-backdrop-filter: blur(20px);
-background: rgba(255, 255, 255, 0.1);
-padding: 10px;
-text-align: left;
-font-size: 0.8rem;
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  text-align: left;
+  font-size: 0.8rem;
 }
-.feature-title1{
+.feature-title1 {
   font-size: 2rem;
   font-weight: 900;
 }
-.feature-title2{
-font-size: 2rem;
+.feature-title2 {
+  font-size: 1rem;
+  font-weight: 900;
 }
-.feature1{
+.feature1 {
   top: 20%;
   right: -10%;
 }
-.feature2{
+.feature2 {
   bottom: 20%;
   left: 20%;
 }
@@ -254,7 +255,6 @@ font-size: 2rem;
 
 .item2 {
   background-image: url(../images/exercise2.png);
-  
 }
 
 .item3 {
@@ -386,6 +386,9 @@ select {
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.6);
+}
+input {
+  width: auto;
 }
 form {
   display: grid;
@@ -600,12 +603,69 @@ hr {
   .item6 {
     display: none;
   }
-.feature1{
-  top: 10%;
-  right: 5%;
+  .feature1 {
+    top: 10%;
+    right: 5%;
+  }
+  .feature2 {
+    bottom: 35%;
+    left: 5%;
+  }
 }
-.feature2{
-  bottom: 35%;
-  left: 5%;
-}
+/* responsive for medium devices */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .run-content {
+    width: 50%;
+  }
+  .run-img {
+    width: 50%;
+  }
+  .run-img img {
+    height: 100%;
+    object-fit: cover;
+    object-position: 70% 30%;
+  }
+  nav ul {
+    gap: 0;
+  }
+  .hero-container,
+  .bmi-content,
+  .footer-content {
+    flex-direction: column;
+  }
+  .hero-content {
+    width: 100%;
+  }
+  .features {
+    width: 100%;
+    text-align: center;
+  }
+  .feature1 {
+    right: 10%;
+  }
+  .habit-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .habit {
+    width: auto;
+  }
+  .bmi-chart {
+    width: 80%;
+  }
+  .bmi-form {
+    width: 80%;
+    margin: auto;
+  }
+  input {
+    width: auto;
+  }
+  .footer-content-one,
+  .footer-content-two {
+    width: 80%;
+  }
 }
