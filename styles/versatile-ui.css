@@ -558,6 +558,7 @@ hr {
     width: 90%;
     align-items: center;
     margin: 0 auto;
+    padding-bottom: 1rem;
   }
   .habit {
     width: 100%;
